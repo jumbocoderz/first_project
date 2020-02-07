@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Text Utility</title>
+</head>
+<body>
+    
+    <!-- Navbar Of the home page-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TextUtility</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="alert alert-success" role="alert">
+        <strong>Welcome To Text Utility</strong> You can do anything with your text
+      </div>
+    
+<div class="container">
+
+    <h1>Enter your text to use text utilities</h1>
+    <form action='analyze/' method='get'>
+
+        <textarea name='text' style="margin: 0px; width: 830px; height: 214px;"></textarea> <br>
+        
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+        </div>
+        
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="uppercasefirstletter" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">UpperCase First Character</label>
+        </div>
+        
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="uppercase" class="custom-control-input" id="customSwitch3">
+            <label class="custom-control-label" for="customSwitch3">UpperCase</label>
+        </div>
+        
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="spaceremover" class="custom-control-input" id="customSwitch4">
+            <label class="custom-control-label" for="customSwitch4">Extra Space Remover</label>
+        </div>
+        
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="newlineremover" class="custom-control-input" id="customSwitch5">
+            <label class="custom-control-label" for="customSwitch5">New Line Remover</label>
+        </div>
+       
+        <button type='submit'> Analyze Text </button>
+    </form>
+</div>
+</body>
+</html>
